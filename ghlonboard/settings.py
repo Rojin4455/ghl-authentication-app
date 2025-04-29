@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from decouple import config
+from datetime import timedelta
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -131,11 +133,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CELERY_BEAT_SCHEDULE = {
-    'make-api-call-every-minute': {
+    'make-api-call-every-23-hours': {
         'task': 'accounts.tasks.make_api_call',
-        'schedule': 60.0,# every 60 seconds
+        'schedule': timedelta(hours=23),
     },
 }
+
 
 
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
