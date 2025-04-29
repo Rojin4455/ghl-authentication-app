@@ -28,7 +28,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.124.0.2', 'localhost', 'sebastian@digivomedia.co.uk', '146.190.136.80']
+ALLOWED_HOSTS = ['10.124.0.2', 'localhost', 'sebastian@digivomedia.co.uk', '146.190.136.80', 'auth.cinemato.com']
 
 
 # Application definition
