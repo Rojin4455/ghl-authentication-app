@@ -94,7 +94,7 @@ def tokens(request):
         }, status=500)
     
 
-print("swws",GHLAuthCredentials.objects.first())
+# print("swws",GHLAuthCredentials.objects.first())
 
 def get_token(request):
     location_id = request.GET.get('locationId')
