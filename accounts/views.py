@@ -105,3 +105,7 @@ def get_token(request):
         return JsonResponse({'access_token': token.access_token})
     except GHLAuthCredentials.DoesNotExist:
         return JsonResponse({'error': 'Token not found for the given locationId'}, status=404)
+    
+
+# def token_refresh(request):
+#     if request.method == "POST":
