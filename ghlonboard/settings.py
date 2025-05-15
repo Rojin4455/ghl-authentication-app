@@ -135,7 +135,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CELERY_BEAT_SCHEDULE = {
     'make-api-call-every-23-hours': {
         'task': 'accounts.tasks.make_api_call',
-        'schedule': timedelta(hours=23),
+        'schedule': timedelta(minutes=1),
     },
 }
 

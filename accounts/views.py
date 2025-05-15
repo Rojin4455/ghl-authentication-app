@@ -98,10 +98,8 @@ def tokens(request):
 
 def get_token(request):
     location_id = request.GET.get('locationId')
-
     if not location_id:
         return JsonResponse({'error': 'Missing locationId in query params'}, status=400)
-
     try:
         token = GHLAuthCredentials.objects.get(location_id=location_id)
         return JsonResponse({'access_token': token.access_token})

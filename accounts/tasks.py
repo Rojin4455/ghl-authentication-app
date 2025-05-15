@@ -30,7 +30,7 @@ def make_api_call():
                 "scope": new_tokens.get("scope"),
                 "user_type": new_tokens.get("userType"),
                 "company_id": new_tokens.get("companyId"),
-                "user_id":new_tokens.get("userId"),
+                # "user_id":new_tokens.get("userId"),
 
             }
         )
