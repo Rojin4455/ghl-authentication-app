@@ -77,7 +77,6 @@ def tokens(request):
                 "user_type": response_data.get("userType"),
                 "company_id": response_data.get("companyId"),
                 "user_id":response_data.get("userId"),
-
             }
         )
         return render(request, 'onboard.html', context = {

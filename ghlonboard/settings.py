@@ -28,7 +28,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '146.190.136.80', 'auth.digi-flow.co.uk']
+ALLOWED_HOSTS = ['localhost', '146.190.136.80', 'auth.digi-flow.co.uk', '127.0.0.1']
 
 
 # Application definition

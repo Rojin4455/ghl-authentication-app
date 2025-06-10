@@ -1,7 +1,7 @@
 from django.db import models
 
 class GHLAuthCredentials(models.Model):
-    user_id = models.CharField(max_length=255, unique=True)
+    user_id = models.CharField(max_length=255, null=True, blank=True)
     access_token = models.TextField()
     refresh_token = models.TextField()
     expires_in = models.IntegerField()
